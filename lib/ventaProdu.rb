@@ -21,7 +21,10 @@ class VentaProdu
                 end
             end
         end
-
+        #<   >
+        if (cantidad_items>=1000)
+            precioF=precioF -(precio_unitario*0.03)
+        end
                 
         return precioF
     end
