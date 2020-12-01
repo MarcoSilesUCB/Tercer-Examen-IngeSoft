@@ -27,4 +27,9 @@ RSpec.describe VentaProdu do
         expect(precio).to eq(210)
     end
 
+    it "calcular precio final (5)" do
+        ventaProducto = VentaProdu.new
+        precio = ventaProducto.calcular_precio_final(3000,200,"NV")
+        expect(precio).to eq(206)
+    end
 end
